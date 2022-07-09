@@ -6,7 +6,7 @@ set -e
 
 : "${TAG:="$(date "+%Y%m%d%H%M%S")"}"
 
-subdir="keyboards/keychron/k6/keymaps/ansi-josh"
+subdir="keyboards/keychron/k3/keymaps/iso_seyahdoo"
 
 if [[ -d "qmk_firmware/$subdir" ]]; then
   rm -rf "qmk_firmware/$subdir"
@@ -16,4 +16,4 @@ cp -rp "$subdir" qmk_firmware/keyboards/keychron/k6/keymaps
 
 (cd qmk_firmware &&
   make -j4 keychron/k6/rgb/ansi:ansi-josh COLOR=false &&
-  mv keychron_k6_rgb_ansi_ansi-josh.bin ../build/"keychron-k6-ansi-josh-$TAG.bin")
+  mv keychron_k3_rgb_optical_iso_iso_seyahdoo.bin ../build/"keychron_k3_rgb_optical_iso_iso_seyahdoo-$TAG.bin")
