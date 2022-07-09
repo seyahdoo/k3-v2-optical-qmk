@@ -16,20 +16,20 @@ jobs:
       - name: Install git submodules
         run: cd qmk_firmware && make git-submodule
       - name: Copy custom keymaps
-        run: cp -rp keyboards/keychron/k6/keymaps/ansi-josh qmk_firmware/keyboards/keychron/k6/keymaps
+        run: cp -rp keyboards/keychron/k3/keymaps/iso_seyahdoo qmk_firmware/keyboards/keychron/k3/keymaps
       - name: Compile firmware
-        run: cd qmk_firmware && make keychron/k6/rgb/ansi:ansi-josh
+        run: cd qmk_firmware && make keychron/k3/rgb/optical_iso:iso_seyahdoo
       - name: Upload compiled firmware (build artifact)
         uses: actions/upload-artifact@v2
         with:
-          name: Keychron K6 QMK Firmware
-          path: qmk_firmware/keychron_k6_rgb_ansi_ansi-josh.bin
+          name: Keychron K3 QMK Firmware
+          path: qmk_firmware/keychron_k3_rgb_optical_iso_iso_seyahdoo.bin
       - name: Upload compiled firmware (tagged release)
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            qmk_firmware/keychron_k6_rgb_ansi_ansi-josh.bin
+            qmk_firmware/keychron_k3_rgb_optical_iso_iso_seyahdoo.bin
     # runs-on: macos-11
     # steps:
     #   - uses: actions/checkout@v2
