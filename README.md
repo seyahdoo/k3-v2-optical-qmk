@@ -15,9 +15,9 @@ I did this for two reasons:
    way I can tag a working version on GitHub and always have a copy in case
    I break something.
 
-## K6 Keymap
+## K3v2 Keymap
 
-My K6 keymap is at
+My K3v2 keymap is at
 [`keyboards/keychron/k3/keymaps/iso_seyahdoo/keymap.c`](./keyboards/keychron/k3/keymaps/iso_seyahdoo/keymap.c).
 It is a copy of the [`keychron/k3/rgb/optical_iso:iso`][Sonix QMK K3 Keymap]
 that I've tweaked a bit.
