@@ -1,7 +1,7 @@
-# Keychron K6 QMK
+# Keychron K3v2 QMK
 
-This repo is for me to compile [QMK][] firmware for my [Keychron K6][]
-keyboard. Actually, it uses the [Sonix QMK][] fork to work on the K6's
+This repo is for me to compile [QMK][] firmware for my [Keychron K3][]
+keyboard. Actually, it uses the [Sonix QMK][] fork to work on the K3's
 SN32F248B chip.
 
 It uses GitHub actions to build and upload compiled `.bin` files suitable for
@@ -15,14 +15,14 @@ I did this for two reasons:
    way I can tag a working version on GitHub and always have a copy in case
    I break something.
 
-## K6 Keymap
+## K3v2 Keymap
 
-My K6 keymap is at
-[`keyboards/keychron/k6/keymaps/ansi-josh/keymap.c`](./keyboards/keychron/k6/keymaps/ansi-josh/keymap.c).
-It is a copy of the [`keychron/k6/rgb/ansi:ansi`][Sonix QMK K6 Keymap]
+My K3v2 keymap is at
+[`keyboards/keychron/k3/keymaps/iso_seyahdoo/keymap.c`](./keyboards/keychron/k3/keymaps/iso_seyahdoo/keymap.c).
+It is a copy of the [`keychron/k3/rgb/optical_iso:iso`][Sonix QMK K3 Keymap]
 that I've tweaked a bit.
 
-See the [releases](https://github.com/itspriddle/k6-qmk/releases) page for
+See the [releases](https://github.com/seyahdoo/k3-v2-optical-qmk/releases) page for
 tagged builds.
 
 ## GitHub Workflow
@@ -41,9 +41,11 @@ To see how to do this locally on macOS or Linux, see
 
 Huge thanks to [QMK-on-K6][] for outlining this process!
 
+[Forked from Keychron K6 CI Repo](https://github.com/itspriddle/k6-qmk)
+
 [QMK]: https://qmk.fm
 [Sonix QMK]: https://github.com/SonixQMK/qmk_firmware
-[Sonix QMK K6 Keymap]: https://github.com/SonixQMK/qmk_firmware/blob/96d0671481abb3b9c751a1e35b558a86c55d9d92/keyboards/keychron/k6/keymaps/ansi/keymap.c
+[Sonix QMK K3 Keymap]: https://github.com/SonixQMK/qmk_firmware/blob/96d0671481abb3b9c751a1e35b558a86c55d9d92/keyboards/keychron/k3/keymaps/iso/keymap.c
 [Sonix Flasher]: https://github.com/SonixQMK/sonix-flasher/releases/tag/v0.2.1
 [QMK-on-K6]: https://github.com/CanUnesi/QMK-on-K6/blob/main/README.md
-[Keychron K6]: https://www.keychron.com/products/keychron-k6-wireless-mechanical-keyboard
+[Keychron K3]: https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard
