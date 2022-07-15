@@ -111,5 +111,4 @@ bool dip_switch_update_user(uint8_t index, bool active) {
 }
 
 void keyboard_post_init_user(void) {
-    eeconfig_init();
 }

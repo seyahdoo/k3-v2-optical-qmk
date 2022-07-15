@@ -96,3 +96,7 @@
 #define ENABLE_RGB_MATRIX_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
+
+//i dont know what this does exactly, this is coming from this issue
+//https://github.com/qmk/qmk_firmware/issues/5585
+#define NO_USB_STARTUP_CHECK = yes
