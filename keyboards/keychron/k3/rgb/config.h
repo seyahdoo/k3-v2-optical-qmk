@@ -39,6 +39,9 @@
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
 
+/* LED Status indicators */
+#define LED_CAPS_LOCK_PIN D4
+
 /* RGB LED Config */
 #define LED_MATRIX_ROWS MATRIX_ROWS
 #define LED_MATRIX_ROW_CHANNELS 3
