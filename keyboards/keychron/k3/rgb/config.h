@@ -102,4 +102,5 @@
 
 //i dont know what this does exactly, this is coming from this issue
 //https://github.com/qmk/qmk_firmware/issues/5585
-#define NO_USB_STARTUP_CHECK = yes
+// #define NO_USB_STARTUP_CHECK = yes
+#define USB_SUSPEND_WAKEUP_DELAY 200
