@@ -104,3 +104,7 @@
 //https://github.com/qmk/qmk_firmware/issues/5585
 // #define NO_USB_STARTUP_CHECK = yes
 #define USB_SUSPEND_WAKEUP_DELAY 200
+
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
+#define CAPS_LOCK_INDICATOR_COLOR RGB_RED
+#define FN_LAYER_COLOR RGB_ORANGE
